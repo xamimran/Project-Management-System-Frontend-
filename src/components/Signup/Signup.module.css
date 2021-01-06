@@ -1,0 +1,77 @@
+/* Submit Button */
+.submitButton {
+      background-color: var(--default-color) !important;
+      color: white !important;
+}
+
+/* Root CSS */
+.root {
+      text-align: center;
+      margin-top: 10vh;
+      font-family: "Lato", sans-serif;
+      /* line-height: 0.5rem; */
+}
+
+/* Sign in */
+.h1 {
+      font-weight: bold;
+      font-size: 8vh;
+}
+
+
+
+/* Sign up */
+.a1 {
+      color: var(--default-color);
+      font-weight: bolder;
+      cursor: pointer;
+      font-size: 20px;
+}
+
+.a1:hover {
+      text-decoration: none;
+}
+
+
+
+/*==============*/
+.MainDiv {}
+
+.FNameField {
+      flex-basis: 50%;
+      flex-grow: 0;
+      max-width: 50%;
+      margin-right: 1rem;
+}
+
+.LNameField {
+      flex-basis: 50%;
+      flex-grow: 0;
+      max-width: 50%;
+
+}
+
+/*==============*/
+/* Fields that are marked with * sign are required. */
+.p1 {
+      text-align: left !important;
+      color: #363434;
+      font-style: italic;
+      font-size: 13px;
+}
+
+/*  Reset password */
+.a2 {
+      color: var(--default-color);
+      font-weight: bolder;
+      cursor: pointer;
+}
+
+.a2:hover {
+      text-decoration: none;
+}
+
+/* Already have an account? */
+.p2 {
+      color: var(--grey-color);
+}
