@@ -8,26 +8,3 @@
   background-color: var(--default-color) !important;
   color: white !important;
 }
-
-/* Your Tasks */
-.tasks {
-  padding: 10px 10px !important;
-  font-size: 5vw !important;
-  color: var(--default-color) !important;
-  background-color: var(--default-color-background) !important;
-  border-radius: 1vw !important;
-}
-
-.task_h5 {
-  font-weight: bold !important;
-  margin-bottom: 20px !important;
-}
-
-.task_p {
-    color: var(--grey-color) !important;
-    font-size: 15px !important;
-}
-
-.card {
-    border: 1px solid #00000033;
-}

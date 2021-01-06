@@ -1,0 +1,14 @@
+/* Root CSS */
+.root {
+  border: 1px solid #00000033 !important;
+}
+
+.title {
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+}
+
+.desc {
+  color: var(--grey-color) !important;
+  font-size: 15px !important;
+}
