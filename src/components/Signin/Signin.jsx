@@ -117,7 +117,7 @@ export const Signin = () => {
           </Button>
           <p>
             Forgot your password?
-            <a className={styles.a2} href="/passwordReset">
+            <a className={styles.a2} href="/resetPassword">
               Reset password <ArrowRightAltIcon />{" "}
             </a>
           </p>

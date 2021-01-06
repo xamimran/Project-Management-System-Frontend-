@@ -11,8 +11,8 @@
     font-weight: bolder;
     color: #ffffff;
     text-shadow: 0px 0px 6px var(--default-color);
-    /* border-top: 00.7vmin solid var(--default-color); */
-    /* border-bottom: 0.7vmin solid var(--default-color); */
+    border-top: 00.7vmin solid var(--default-color);
+    border-bottom: 0.7vmin solid var(--default-color);
 }
 .span:hover {
     cursor: pointer;
