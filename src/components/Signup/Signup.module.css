@@ -1,24 +1,25 @@
-/* Submit Button */
-.submitButton {
-      background-color: var(--default-color) !important;
-      color: white !important;
-}
 
 /* Root CSS */
 .root {
       text-align: center;
-      margin-top: 10vh;
+      margin-top: 6vh;
       font-family: "Lato", sans-serif;
       /* line-height: 0.5rem; */
 }
 
-/* Sign in */
+/* Sign Up  Text*/
 .h1 {
       font-weight: bold;
-      font-size: 8vh;
+      font-size: 7vh;
 }
 
-
+.ph6
+{
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.5;
+}
 
 /* Sign up */
 .a1 {
@@ -34,8 +35,8 @@
 
 
 
-/*==============*/
-.MainDiv {}
+/*======= Name Fields =======*/
+
 
 .FNameField {
       flex-basis: 50%;
@@ -60,7 +61,7 @@
       font-size: 13px;
 }
 
-/*  Reset password */
+/*  Sign In */
 .a2 {
       color: var(--default-color);
       font-weight: bolder;
@@ -69,6 +70,12 @@
 
 .a2:hover {
       text-decoration: none;
+}
+
+/* Submit Button */
+.submitButton {
+      background-color: var(--default-color) !important;
+      color: white !important;
 }
 
 /* Already have an account? */

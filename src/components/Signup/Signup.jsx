@@ -5,6 +5,7 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 // Importing CSS
 import styles from "./Signup.module.css";
 import { Header } from "../Header/Header";
+import { Link } from "react-router-dom";
 
 export const Signup = () => {
   const [emailHelperText, setEmailHelperText] = useState("");
@@ -123,10 +124,13 @@ export const Signup = () => {
     <div>
       <Header/>
       <div className={`${styles.root} col-sm-8 col-md-5 mx-auto`}>
-        <h1 className={styles.h1}>Sign Up</h1>
+        <h1 className={styles.h1}>Sign up</h1>
+        <p>
+          <span className={styles.ph6}>If you don't know where you are going. How can you expect to get there</span>
+        </p>
         <form action="/home" method="POST">
             {/*Fist and Last Name */  }
-          <div className={`${styles.MainDiv} d-flex  mx-auto`}>
+          <div className=" d-flex  mx-auto">
             <div className={styles.FNameField}>
                   <TextField
                 fullWidth
@@ -200,9 +204,9 @@ export const Signup = () => {
           </Button>
           <p className={styles.p2}>
             Already have an account? {" "} 
-            <a className={styles.a2} href="/signin">
+            <Link className={styles.a2} to="/signin">
                Sign In <ArrowRightAltIcon />{" "}
-            </a>
+            </Link>
           </p>
         </form>
       </div>
