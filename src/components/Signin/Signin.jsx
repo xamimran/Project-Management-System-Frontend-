@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import { Link } from 'react-router-dom';
 
 // Importing CSS
 import styles from "./Signin.module.css";
@@ -72,9 +73,9 @@ export const Signin = () => {
         <h1 className={styles.h1}>Sign in</h1>
         <p>
           <span className={styles.span1}>Don't have an account?</span>
-          <a className={styles.a1} href="/signup">
+          <Link className={styles.a1} to="/signup">
             Sign up <ArrowRightAltIcon />
-          </a>
+          </Link>
         </p>
         <form action="/home" method="POST">
           <TextField
@@ -117,9 +118,9 @@ export const Signin = () => {
           </Button>
           <p>
             Forgot your password?
-            <a className={styles.a2} href="/resetPassword">
+            <Link className={styles.a2} to="/resetPassword">
               Reset password <ArrowRightAltIcon />{" "}
-            </a>
+            </Link>
           </p>
         </form>
       </div>
