@@ -1,4 +1,4 @@
-# *Project Management System*
+# **Project Management System**
 
 ## Frontend Only (with **React**)
 
