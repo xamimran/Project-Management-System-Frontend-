@@ -13,42 +13,45 @@ export const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-   //=====
-    
+  //=====
+
   const [fNameHelperText, setFNameHelperText] = useState("");
   const [lNameHelperText, setLNameHelperText] = useState("");
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
 
-   //=====
- 
-
+  //=====
 
   const submit = (e) => {
     e.preventDefault(); // Prevent Form from submitting
 
-   //======
-     // Validating 'first Name' and 'last Name'
-        validateFName(fName);
-        validateLName(lName);
-   //======
+    //======
+    // Validating 'first Name' and 'last Name'
+    validateFName(fName);
+    validateLName(lName);
+    //======
 
     // First Validating 'password' and 'email'
     validatePasswordLength(password);
     validateEmail(email);
-    
 
-    if( fNameHelperText === ""   && lNameHelperText === ""  && email !== ""    && emailHelperText === "" && passwordHelperText === ""  ) {
+    if (
+      fNameHelperText === "" &&
+      lNameHelperText === "" &&
+      email !== "" &&
+      emailHelperText === "" &&
+      passwordHelperText === ""
+    ) {
       // Redirection Logic Comes Here
       console.log("Redirect");
     }
   };
 
   //====================
-    // First  Name Validator
-   const validateFName = (fn) => {
+  // First  Name Validator
+  const validateFName = (fn) => {
     setFName(fn); // update First Name
-    
+
     // Empty Check
     if (fn === "") {
       setFNameHelperText("First Name is required");
@@ -58,10 +61,10 @@ export const Signup = () => {
       setFNameHelperText("");
     }
   };
-   // Last Name Validator
-   const validateLName = (ln) => {
+  // Last Name Validator
+  const validateLName = (ln) => {
     setLName(ln); // update Last Name
-    
+
     // Empty Check
     if (ln === "") {
       setLNameHelperText("Last Name is required");
@@ -72,12 +75,7 @@ export const Signup = () => {
     }
   };
 
-
-
-
   //=========================
-
-
 
   // Password Validator
   const validatePasswordLength = (pass) => {
@@ -98,7 +96,7 @@ export const Signup = () => {
   };
 
   // Email Validator
-   const validateEmail = (m) => {
+  const validateEmail = (m) => {
     setEmail(m);
     // Getting matched str
     let matchedStr = m.match(
@@ -119,51 +117,50 @@ export const Signup = () => {
     }
   };
 
-  
   return (
     <div>
-      <Header/>
+      <Header />
       <div className={`${styles.root} col-sm-8 col-md-5 mx-auto`}>
         <h1 className={styles.h1}>Sign up</h1>
         <p>
-          <span className={styles.ph6}>If you don't know where you are going. How can you expect to get there</span>
+          <span className={styles.ph6}>
+            If you don't know where you are going. How can you expect to get
+            there
+          </span>
         </p>
         <form action="/home" method="POST">
-            {/*Fist and Last Name */  }
+          {/*Fist and Last Name */}
           <div className=" d-flex  mx-auto">
             <div className={styles.FNameField}>
-                  <TextField
+              <TextField
                 fullWidth
                 type="text"
                 variant="outlined"
                 label="First name"
                 required
-                error={ fNameHelperText === "" ? false : true}
+                error={fNameHelperText === "" ? false : true}
                 helperText={fNameHelperText}
                 onChange={(e) => validateFName(e.target.value)}
                 placeholder="First Name"
                 className="mb-2 mt-2"
-                />{" "}
+              />{" "}
             </div>
             <div className={styles.LNameField}>
-                  <TextField
-                  fullWidth
-                  type="text"
-                  variant="outlined"
-                  label="Last name"
-                  required
-                  error={ lNameHelperText === "" ? false : true}
-                  helperText={lNameHelperText}
-                  onChange={(e) => validateLName(e.target.value)}
-                  placeholder="Last Name"
-                  className="mb-2 mt-2"
-                  />{" "}
+              <TextField
+                fullWidth
+                type="text"
+                variant="outlined"
+                label="Last name"
+                required
+                error={lNameHelperText === "" ? false : true}
+                helperText={lNameHelperText}
+                onChange={(e) => validateLName(e.target.value)}
+                placeholder="Last Name"
+                className="mb-2 mt-2"
+              />{" "}
             </div>
-            
           </div>
-          
-            {/*new stuff end */ }
-
+          {/*new stuff end */}
           <TextField
             fullWidth
             type="email"
@@ -177,7 +174,7 @@ export const Signup = () => {
             className="mb-2 mt-2"
           />{" "}
           <br />
-            <TextField
+          <TextField
             fullWidth
             type="password"
             variant="outlined"
@@ -203,9 +200,9 @@ export const Signup = () => {
             SEND
           </Button>
           <p className={styles.p2}>
-            Already have an account? {" "} 
-            <Link className={styles.a2} to="/signin">
-               Sign In <ArrowRightAltIcon />{" "}
+            Already have an account?{" "}
+            <Link className={styles.a2} to="/">
+              Sign In <ArrowRightAltIcon />{" "}
             </Link>
           </p>
         </form>
