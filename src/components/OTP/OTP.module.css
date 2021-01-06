@@ -1,0 +1,28 @@
+
+/* Root CSS */
+.root {
+    text-align: center;
+    margin-top: 7vh;
+    font-family: "Lato", sans-serif;
+    /* line-height: 0.5rem; */
+}
+
+
+/* Submit Button */
+.submitButton {
+    background-color: var(--default-color) !important;
+    color: white !important;
+  }
+/* Sign Up  Text*/
+.h1 {
+    font-weight: bold;
+    font-size: 7vh;
+}
+
+.ph6
+{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}  
