@@ -1,14 +1,14 @@
-/* Submit Button */
-.submitButton {
-  background-color: var(--default-color) !important;
-  color: white !important;
-}
-
 /* Root CSS */
 .root {
   text-align: center;
   margin-top: 10vh;
   font-family: "Lato", sans-serif;
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: var(--default-color) !important;
+  color: white !important;
 }
 
 /* Sign in */
