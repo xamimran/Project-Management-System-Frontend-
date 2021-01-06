@@ -1,0 +1,10 @@
+.root {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.span {
+    font-size: var(--max-size);
+    font-weight: bolder;
+    color: var(--default-color);
+}
