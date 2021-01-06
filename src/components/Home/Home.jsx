@@ -11,7 +11,7 @@ export const Home = () => {
       {/* Adding Header */}
       <HomeHeader />
 
-      <h1>Welcome to Projet Management System</h1>
+      <h1 className="mt-5">Welcome to Projet Management System</h1>
       <p>
         We design, develop and launch websites and products for startups,
         companies and ourselves.

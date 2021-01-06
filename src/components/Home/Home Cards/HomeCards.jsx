@@ -7,29 +7,56 @@ import styles from "./HomeCards.module.css";
 
 export const HomeCards = () => {
   return (
-    <div className="d-flex justify-content-center">
-      <HomeCard
-        title="Your Tasks 2"
-        desc="You can check your tasks from here. Which are assigned to you by
+    <div className="d-flex row justify-content-center">
+      <div className="col-md-3 col-sm-5">
+        <HomeCard
+          title="Your Tasks 2"
+          desc="You can check your tasks from here. Which are assigned to you by
                 your Team Leader. Complete your tasks as soon as possible"
-      >
-        <AssignmentTurnedInOutlinedIcon className={styles.icon} />
-      </HomeCard>
+          disable={true}
+        >
+          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+        </HomeCard>
+      </div>
 
-      <HomeCard
-        title="Your Tasks 2"
-        desc="You can check your tasks from here. Which are assigned to you by
+      <div className="col-md-3 col-sm-5">
+        <HomeCard
+          title="Your Tasks 2"
+          desc="You can check your tasks from here. Which are assigned to you by
                 your Team Leader. Complete your tasks as soon as possible"
-      >
-        <AssignmentTurnedInOutlinedIcon className={styles.icon} />
-      </HomeCard>
-      <HomeCard
-        title="Your Tasks 2"
-        desc="You can check your tasks from here. Which are assigned to you by
+        >
+          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+        </HomeCard>
+      </div>
+      <div className="col-md-3 col-sm-5">
+        <HomeCard
+          title="Your Tasks 2"
+          desc="You can check your tasks from here. Which are assigned to you by
                 your Team Leader. Complete your tasks as soon as possible"
-      >
-        <AssignmentTurnedInOutlinedIcon className={styles.icon} />
-      </HomeCard>
+        >
+          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+        </HomeCard>
+      </div>
+
+      <div className="col-md-3 col-sm-5">
+        <HomeCard
+          title="Your Tasks 2"
+          desc="You can check your tasks from here. Which are assigned to you by
+                your Team Leader. Complete your tasks as soon as possible"
+        >
+          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+        </HomeCard>
+      </div>
+
+      <div className="col-md-3 col-sm-5">
+        <HomeCard
+          title="Your Tasks 2"
+          desc="You can check your tasks from here. Which are assigned to you by
+                your Team Leader. Complete your tasks as soon as possible"
+        >
+          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+        </HomeCard>
+      </div>
     </div>
   );
 };

@@ -14,7 +14,7 @@ export const HomeCard = (props) => {
 
   return (
     <Card
-      className={`col-3 px-0 mr-5 ${styles.root}`}
+      className={`${styles.root} ${props.disable == null ? null: styles.disable}`}
       raised={raised}
       onPointerEnter={() => setRaised(true)}
       onPointerLeave={() => setRaised(false)}
