@@ -1,0 +1,84 @@
+
+/* Root CSS */
+.root {
+      text-align: center;
+      margin-top: 6vh;
+      font-family: "Lato", sans-serif;
+      /* line-height: 0.5rem; */
+}
+
+/* Sign Up  Text*/
+.h1 {
+      font-weight: bold;
+      font-size: 7vh;
+}
+
+.ph6
+{
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.5;
+}
+
+/* Sign up */
+.a1 {
+      color: var(--default-color);
+      font-weight: bolder;
+      cursor: pointer;
+      font-size: 20px;
+}
+
+.a1:hover {
+      text-decoration: none;
+}
+
+
+
+/*======= Name Fields =======*/
+
+
+.FNameField {
+      flex-basis: 50%;
+      flex-grow: 0;
+      max-width: 50%;
+      margin-right: 1rem;
+}
+
+.LNameField {
+      flex-basis: 50%;
+      flex-grow: 0;
+      max-width: 50%;
+
+}
+
+/*==============*/
+/* Fields that are marked with * sign are required. */
+.p1 {
+      text-align: left !important;
+      color: #363434;
+      font-style: italic;
+      font-size: 13px;
+}
+
+/*  Sign In */
+.a2 {
+      color: var(--default-color);
+      font-weight: bolder;
+      cursor: pointer;
+}
+
+.a2:hover {
+      text-decoration: none;
+}
+
+/* Submit Button */
+.submitButton {
+      background-color: var(--default-color) !important;
+      color: white !important;
+}
+
+/* Already have an account? */
+.p2 {
+      color: var(--grey-color);
+}
