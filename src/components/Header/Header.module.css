@@ -1,12 +1,11 @@
 /* Root CSS */
 .root {
     margin-top: 15px;
-    text-align: center;
 }
 
 /* Project Management System */
 .span {
-    /* margin-left: 10vw; */
+    margin-left: 10vw;
     font-size: var(--max-size);
     font-weight: bolder;
     color: #ffffff;
