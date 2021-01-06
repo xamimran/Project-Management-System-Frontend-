@@ -1,10 +1,24 @@
+/* Root CSS */
 .root {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
 }
 
+/* Project Management System */
 .span {
+    /* margin-left: 10vw; */
     font-size: var(--max-size);
     font-weight: bolder;
-    color: var(--default-color);
+    color: #ffffff;
+    text-shadow: 0px 0px 6px var(--default-color);
+    /* border-top: 00.7vmin solid var(--default-color); */
+    /* border-bottom: 0.7vmin solid var(--default-color); */
+}
+.span:hover {
+    cursor: pointer;
+}
+
+/* <a> */
+.a:hover {
+    text-decoration: none;
 }
