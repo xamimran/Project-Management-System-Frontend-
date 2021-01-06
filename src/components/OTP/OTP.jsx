@@ -2,7 +2,7 @@ import React from 'react'
 import AutorenewIcon from '@material-ui/icons/Autorenew';
 import { TextField, Button } from "@material-ui/core";
 import Icon from '@material-ui/core/Icon';
-import { Header } from '../Header/Header'
+import { Header } from '../Header/Header';
 // importing CSS
 import styles from './OTP.module.css';
 
@@ -22,7 +22,7 @@ export const OTP = () => {
         <h1 className={styles.h1}>Verify Mobile Number</h1>
         <p>
           <span className={styles.ph6}>
-            OTP has been sent to your E-mail please enter it below
+            OTP has been sent to your E-mail, Enter it below
           </span>
         </p>
         <form action="/home" method="POST">
