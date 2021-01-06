@@ -1,14 +1,15 @@
 import { Button } from "@material-ui/core";
 import React from "react";
-import { Header } from "../Header/Header";
 import { HomeCards } from "./Home Cards/HomeCards";
 // importing CSS
 import styles from "./Home.module.css";
+import { HomeHeader } from "./HomeHeader/HomeHeader";
 
 export const Home = () => {
   return (
     <div className={styles.root}>
-      <Header />
+      {/* Adding Header */}
+      <HomeHeader />
 
       <h1>Welcome to Projet Management System</h1>
       <p>

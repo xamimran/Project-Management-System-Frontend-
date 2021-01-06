@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Importing CSS
 import styles from "./Header.module.css";
 
-export const Header = () => {
+export const Header = ({ children }) => {
   return (
     <div>
       <AppBar position="static" color="inherit">
@@ -12,6 +12,7 @@ export const Header = () => {
           <Link to="/home" className={styles.a}>
             <span className={styles.span}>PMS</span>
           </Link>
+          {children}
         </Toolbar>
       </AppBar>
     </div>
