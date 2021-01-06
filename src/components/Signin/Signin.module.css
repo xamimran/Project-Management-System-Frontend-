@@ -1,33 +1,53 @@
-.button {
+/* Submit Button */
+.submitButton {
   background-color: var(--default-color) !important;
   color: white !important;
 }
 
+/* Root CSS */
 .root {
   text-align: center;
   margin-top: 20vh;
   font-family: "Lato", sans-serif;
 }
 
-.leftAlign {
-  text-align: left !important;
+/* Sign in */
+.h1 {
+  font-weight: bold;
+  font-size: 8vh;
 }
 
-.greyColor {
-    color: var(--grey-color);
+/* Don't have any account? */
+.span1 {
+  color: var(--grey-color);
+  font-size: 20px;
 }
 
-.a {
-    color: var(--default-color);
-    font-weight: bolder;
-    cursor: pointer;
+/* Sign up */
+.a1 {
+  color: var(--default-color);
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 20px;
 }
-
-.a:hover {
+.a1:hover {
   text-decoration: none;
 }
 
-.h1 {
-    font-weight: bold;
-    font-size: 8vh;
+/* Fields that are marked with * sign are required. */
+.p1 {
+  text-align: left !important;
+  color: #363434;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/*  Reset password */
+.a2 {
+  color: var(--default-color);
+  font-weight: bolder;
+  cursor: pointer;
+}
+.a2:hover {
+  text-decoration: none;
 }
