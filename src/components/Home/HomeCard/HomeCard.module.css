@@ -1,11 +1,13 @@
 /* Root CSS */
 .root {
   border: 1px solid #00000033 !important;
+  font-family: "Lato", sans-serif;
 }
 
 .title {
   font-weight: bold !important;
   margin-bottom: 20px !important;
+  color: black;
 }
 
 .desc {
@@ -15,4 +17,13 @@
 
 .disable {
     color: red !important;
+}
+.spacing{
+margin: 7px;
+}
+Card:shadow{
+  color:green;
+}
+.fixHeight{
+  height: 300px;
 }

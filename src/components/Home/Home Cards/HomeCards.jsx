@@ -1,62 +1,75 @@
 import React from "react";
-import { HomeCard } from "../HomeCard/HomeCard";
-import AssignmentTurnedInOutlinedIcon from "@material-ui/icons/AssignmentTurnedInOutlined";
 
+import { HomeCard } from "../HomeCard/HomeCard";
+
+// importing icons from material UI
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import AssessmentIcon from '@material-ui/icons/Assessment';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import ChatIcon from '@material-ui/icons/Chat';
+import EditIcon from '@material-ui/icons/Edit';
+import { Fade } from '@material-ui/core'
 // importing css
 import styles from "./HomeCards.module.css";
 
 export const HomeCards = () => {
   return (
     <div className="d-flex row justify-content-center">
-      <div className="col-md-3 col-sm-5">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <HomeCard
-          title="Your Tasks 2"
-          desc="You can check your tasks from here. Which are assigned to you by
-                your Team Leader. Complete your tasks as soon as possible"
+          title="Tasks"
+          desc="Here you can find all the tasks here which belongs to you and try to solve them "
           disable={true}
         >
-          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+          <AssignmentIcon className={styles.icon} />
         </HomeCard>
       </div>
 
-      <div className="col-md-3 col-sm-5">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <HomeCard
-          title="Your Tasks 2"
-          desc="You can check your tasks from here. Which are assigned to you by
-                your Team Leader. Complete your tasks as soon as possible"
+          title="Learning Material"
+          desc="Here you can find all the learnig material related to your tasks"
         >
-          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+          < MenuBookIcon className={styles.icon} />
         </HomeCard>
       </div>
-      <div className="col-md-3 col-sm-5">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <HomeCard
-          title="Your Tasks 2"
-          desc="You can check your tasks from here. Which are assigned to you by
-                your Team Leader. Complete your tasks as soon as possible"
+          title="Account Details"
+          desc="Click here to see all your account details or you can change your account settings"
         >
-          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
-        </HomeCard>
-      </div>
-
-      <div className="col-md-3 col-sm-5">
-        <HomeCard
-          title="Your Tasks 2"
-          desc="You can check your tasks from here. Which are assigned to you by
-                your Team Leader. Complete your tasks as soon as possible"
-        >
-          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+          <AccountBoxIcon className={styles.icon} />
         </HomeCard>
       </div>
 
-      <div className="col-md-3 col-sm-5">
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <HomeCard
-          title="Your Tasks 2"
-          desc="You can check your tasks from here. Which are assigned to you by
-                your Team Leader. Complete your tasks as soon as possible"
+          title="Project Details"
+          desc="You can create a new project, change project statistics or simply view them"
         >
-          <AssignmentTurnedInOutlinedIcon className={styles.icon} />
+          <AssessmentIcon className={styles.icon} />
         </HomeCard>
       </div>
+
+      <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <HomeCard
+          title="Discussion"
+          desc="You can share your code details or thoughts with others members"
+        >
+          <ChatIcon  className={styles.icon} />
+        </HomeCard>
+
+        </div>
+        <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <HomeCard
+          title="Feedback/Reports"
+          desc="You can share your feedback realated to any code or report any of the user"
+        >
+          <EditIcon className={styles.icon} />
+        </HomeCard>
+        </div>
+
     </div>
   );
 };

@@ -33,19 +33,11 @@ export const OTP = () => {
             required
             placeholder="CODE"
             className="mb-3 mt-3" />
-        <Button
-                 variant="contained"
-                color="secondary"
-                size="large"
-                endIcon={<AutorenewIcon/>}
-        >
-        Re-Send OTP
-      </Button>
       {" "}
     <Button
               variant="contained"
               color="primary"
-              size="large"
+              fullWidth
               endIcon={<Icon>send</Icon>}
               onClick={(e) => submit(e)}
               >

@@ -13,7 +13,7 @@ export const HomeCard = (props) => {
 
   return (
     <Card
-      className={`${styles.root} ${props.disable == null ? null: styles.disable}`}
+      className={`${styles.root} ${props.disable == null ? null: styles.disable} ${styles.spacing} ${styles.fixHeight}`}
       raised={raised}
       onPointerEnter={() => setRaised(true)}
       onPointerLeave={() => setRaised(false)}

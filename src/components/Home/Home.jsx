@@ -7,7 +7,7 @@ import { HomeHeader } from "./HomeHeader/HomeHeader";
 
 export const Home = () => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root}  >
       {/* Adding Header */}
       <HomeHeader />
 
@@ -20,10 +20,13 @@ export const Home = () => {
         CONTACT US
       </Button>
 
-      <h2 className="my-4">Select Card</h2>
+      <h2 className="my-4">Here We Go!</h2>
 
       {/* Home Cards */}
+      <div className="justify-content-center container">
       <HomeCards />
+      </div>
+
     </div>
   );
 };
