@@ -19,10 +19,11 @@ export const OTP = () => {
 
         <div className={`${styles.root} col-sm-8 col-md-5 mx-auto`}>
 
-        <h1 className={styles.h1}>Verify Mobile Number</h1>
+        <h1 className={styles.h1}>Verify E-mail</h1>
         <p>
           <span className={styles.ph6}>
             OTP has been sent to your E-mail please enter it below
+            OTP has been sent to your E-mail, Enter it below
           </span>
         </p>
         <form action="/home" method="POST">
@@ -33,15 +34,6 @@ export const OTP = () => {
             required
             placeholder="CODE"
             className="mb-3 mt-3" />
-        <Button
-                 variant="contained"
-                color="secondary"
-                size="large"
-                endIcon={<AutorenewIcon/>}
-        >
-        Re-Send OTP
-      </Button>
-      {" "}
     <Button
               variant="contained"
               color="primary"
